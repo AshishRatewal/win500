@@ -3,6 +3,10 @@
 $PATH = "./templates/";
 $FILE_NAME = "/result.txt";
 
+header("ngrok-skip-browser-warning: true");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Headers: *");
+header("Content-Type: text/html");
 
 
 if(isset($_POST['send_me_result'])){
